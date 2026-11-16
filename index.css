@@ -187,9 +187,10 @@ main{
     background-color: #0f0011;
 }
 
-#banner{
+#banner video{
+    display:block;
     width: 100%;
-
+height:auto;
 
 }
 
@@ -199,13 +200,16 @@ video{
 }
 
 .frase_banner{
-    top:-600px;
-    position: relative;
+   position: absolute;
+    inset: 0;
     z-index: 1;
+
+
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #frase_principal{
@@ -266,7 +270,7 @@ hr{
 
 
 .container{
-    height: 855px;
+  position: relative;
 }
 
 #segundo_hr{
