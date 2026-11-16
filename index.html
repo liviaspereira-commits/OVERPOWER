@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="icon" href="imagem/icone_topo_chrome.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVERPOWER</title>
+    <link rel="stylesheet" href="index.css">
+    <!--link dos icones -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon" />
+
+
+<body>
+    <header class="carrosel">
+
+        <input type="radio" name="frase_control" id="frase1" checked>
+        <input type="radio" name="frase_control" id="frase2">
+        <input type="radio" name="frase_control" id="frase3">
+        <input type="radio" name="frase_control" id="frase4">
+
+        <div class="frase_item item_1"> <!--setas laterais-->
+            <label for="frase4" class="seta">&lsaquo;</label>
+
+            <span class="frase">TREINE COM ATITUDE. CONHEÇA NOSSOS PRODUTOS</span>
+
+            <label for="frase2" class="seta">&rsaquo;</label>
+        </div>
+
+        <div class="frase_item item_2">
+            <label for="frase1" class="seta">&lsaquo;</label>
+
+            <span class="frase">DESCUBRA ONDE A EVOLUÇÃO ACONTECE. CONHEÇA A OVERPOWER</span>
+
+            <label for="frase3" class="seta">&rsaquo;</label>
+        </div>
+
+        <div class="frase_item item_3">
+            <label for="frase2" class="seta">&lsaquo;</label>
+
+            <span class="frase">UMA REDE FEITA PARA QUEM QUER EVOLUIR. CONHEÇA NOSSOS PARCEIROS</span>
+
+            <label for="frase4" class="seta">&rsaquo;</label>
+        </div>
+
+        <div class="frase_item item_4">
+            <label for="frase3" class="seta">&lsaquo;</label>
+
+            <span class="frase">DESAFIE SEUS LIMITES. ULTRAPASSE-OS. EXPLORE NOSSOS TREINOS</span>
+
+            <label for="frase1" class="seta">&rsaquo;</label>
+        </div>
+
+        <section class="carrosel_header">
+            <input type="radio" name="carrosel_control" id="carrosel1" checked>
+            <input type="radio" name="carrosel_control" id="carrosel2">
+            <input type="radio" name="carrosel_control" id="carrosel3">
+            <input type="radio" name="carrosel_control" id="carrosel4">
+        </section>
+
+    </header>
+
+    <nav>
+        <div id="parte_esquerda_menu">
+            <a href="index.html"> <img src="imagem/logo branca com fundo roxo.png" alt="logo" width="180px"
+                    class="logo_menu"></a>
+
+            <!--TOPICOS MENU-->
+
+            <section>
+                <a href="produtos.html">
+                    <h5>PRODUTOS</h5>
+                </a>
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </section>
+
+            <section>
+                <a href="treinos.html">
+                    <h5>TREINOS</h5>
+                </a>
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </section>
+
+            <section>
+                <a href="parcerias.html">
+                    <h5>PARCERIAS</h5>
+                </a>
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </section>
+
+            <section>
+                <a href="receitas.html">
+                    <h5>RECEITAS</h5>
+                </a>
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </section>
+
+            <section>
+                <a href="sobrenos.html">
+                    <h5>SOBRE NÓS</h5>
+                </a>
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </section>
+
+        </div>
+
+        <div id="parte_direita_menu">
+
+            <!-- parte de pesquisa-->
+            <div id="pesquisa">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+
+                <input type="text" placeholder="Pesquisar">
+            </div>
+
+            <div id="icones_lateral_menu">
+                <span class="material-symbols-outlined">
+                    account_circle
+                </span>
+
+                <a href="carrinho.html">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+        <section class="container">
+            <!--coloquei essa class para conseguir definir o "tamanho" do video p/ depois as coisas ficarem embaixo dele corretamente-->
+            <section id="banner">
+                <video class="video_background" autoplay muted loop>
+                    <source src="imagem/Sequência 01.mp4" type="video/mp4" width="100%">
+                </video>
+            </section>
+
+            <section class="frase_banner">
+                <h1 id="frase_principal">SANGUE, SUOR E RESULTADO.</h1>
+                <h4 id="frase_secundaria">OVERPOWER. SEU VERDADEIRO PODER COMEÇA AQUI.</h4>
+                <a href="sobrenos.html"><button id="botao_banner"><u>CONHEÇA A MELHOR ESTRUTURA DO
+                            BRASIL</u></button></a>
+            </section>
+        </section>
+
+        <div class="linhas">
+
+            <hr id="separaçao">
+            <br>
+            <hr id="segundo_hr">
+            <br>
+            <hr id="terceiro_hr">
+
+        </div>
+
+        <section class="sobrenos_box">
+
+            <div class="container-imagem">
+                <img src="imagem/BOX_SOBRE_NÓS.png" alt="imagem_inicial" class="img-padrao" width="500px">
+                <img src="imagem/imagem_sobre_nos.png" alt="imagem_no_hover" class="img-hover" width="600px">
+            </div>
+
+            <div class="sobrenos_texto">
+
+                <a href="sobrenos.html"><img class="subtitulo" src="imagem/SOBRE NOS.png" width="120px"></a>
+
+                <div>
+                    <h2 class="titulo">A <span id="fundo_frasesobrenos">FORÇA NASCE NA DISCIPLINA.</span></h2>
+                    <h2 class="titulo">CONHEÇA O NOSSO LEGADO</h2>
+                </div>
+
+                <p class="escrita_sobrenos"><span class="variaçao_escrita">A </span>OVERPOWER <span
+                        class="variaçao_escrita">nasceu da paixão de um grupo de jovens pelo universo fitness e do
+                        desejo de transformar vidas pelo treino de verdade. Percebendo a falta de um espaço autêntico
+                        para quem buscava dar o primeiro passo ou alcançar a alta performance, a trajetória da marca
+                        começou de forma bruta e humilde: em uma garagem.</span></p>
+
+                <p class="escrita_sobrenos"><span class="variaçao_escrita">O símbolo da caveira foi adotado desde os
+                        primeiros dias para lembrar que, no ferro, não existem distinções: somos todos movidos pelo
+                        mesmo propósito de superação. Essa mentalidade fez o projeto da garagem crescer e se tornar uma
+                        referência de força e constante evolução.</span></p>
+                <p class="escrita_sobrenos"><span class="variaçao_escrita">Hoje, a </span>OVERPOWER<span
+                        class="variaçao_escrita"> consolida essa história trazendo inúmeros diferenciais:</span></p>
+
+                <div class="diferenciais_box">
+
+                    <div class="coluna">
+
+                        <div class="diferenciais">
+                            <span class="material-symbols-outlined">
+                                check
+                            </span>
+                            <p class="diferenciais_escritas"><u>Estrutura Brutal e de Alta Performance</u></p>
+                        </div>
+
+
+                        <div class="diferenciais">
+                            <span class="material-symbols-outlined">
+                                check
+                            </span>
+                            <p class="diferenciais_escritas"><u>Profissionais Especializados</u></p>
+                        </div>
+
+
+
+                        <div class="diferenciais">
+                            <span class="material-symbols-outlined">
+                                check
+                            </span>
+                            <p class="diferenciais_escritas"><u>Suporte e Atendimento Completo(Presencial & Digital)</u>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="coluna">
+                        <div class="diferenciais">
+                            <span class="material-symbols-outlined">
+                                check
+                            </span>
+                            <p class="diferenciais_escritas"><u>Melhor Custo-Benefício (Matrícula e Produtos)</u></p>
+                        </div>
+
+                        <div class="diferenciais">
+                            <span class="material-symbols-outlined">
+                                check
+                            </span>
+                            <p class="diferenciais_escritas"><u>Linha Exclusiva de Produtos</u></p>
+                        </div>
+
+                        <div class="diferenciais">
+                            <span class="material-symbols-outlined">
+                                check
+                            </span>
+                            <p class="diferenciais_escritas"><u>Consultoria e Avaliação Constante</u></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+        <h2 id="escolha_seu_treino" class="titulo"><u>ESCOLHA SEU TREINO!</u></h2>
+
+        <section class="grade_treinos">
+
+            <div class="coluna_esquerda">
+
+                <div><a href="treinos.html"><img src="imagem/membros superiores.png" width="365px"></a></div>
+                <div class="sup"><img src="imagem/membros_superiores_frase.png" width="365px"></div>
+
+            </div>
+
+            <section class="coluna_meio">
+
+                <div class="coluna_central">
+                    <div><a href="treinos.html"><img class="membros_inferiores" src="imagem/membros inferiores.png" width="585px"></a></div>
+                    <div class="inf"><img src="imagem/membros_inferiores_frase.png" width="585px"></div>
+                </div>
+
+                <div class="outra_coluna">
+                    <div><a href="treinos.html"><img src="imagem/abdominal.png" width="585px"></a></div>
+                    <div class="abd"><img src="imagem/abdominal_frase.png" width="172px"></div>
+                </div>
+
+            </section>
+
+            <div class="coluna_direita">
+                <div><a href="treinos.html"><img src="imagem/cardio.png" width="365px"></a></div>
+                <div class="cardio"><img src="imagem/cardio_frase.png" width="365px"></div>
+            </div>
+
+        </section>
+
+        <section>
+            
+            <img class="planos_imagem" src="imagem/PLANOS PARA MATRÍCULAS PRESENCIAIS.png"
+                alt="Imagem dos planos para matrículas presenciais" width="200px">
+
+            <div class="planos_box">
+
+                <div class="planos">
+
+                    <div class="titulo_plano">
+                        <h2><u>PLANO IRON</u></h2>
+                        <p>Ideal para quem busca foco absoluto no treino presencial sem distrações. </p>
+                        <h2>R$59<span class="preço">/mês</span></h2>
+                    </div>
+
+                    <div class="itens_plano">
+                        <span class="material-symbols-outlined">
+                            check
+                        </span>
+                        <p>Acesso ilimitado à estrutura presencial da academia (musculação e treino livre).</p>
+                    </div>
+
+                    <div class="itens_plano">
+                        <span class="material-symbols-outlined">
+                            check
+                        </span>
+                        <p>Acesso em todos os horários de funcionamento (segunda a domingo).</p>
+                    </div>
+
+                    <div class="itens_plano">
+                        <span class="material-symbols-outlined">
+                            check
+                        </span>
+                        <p>Ficha de treino inicial e orientação básica da equipe técnica.</p>
+                    </div>
+
+                    <div class="itens_plano">
+                        <span class="material-symbols-outlined">
+                            check
+                        </span>
+                        <p>Ficha de treino inicial e orientação básica da equipe técnica.</p>
+                    </div>
+
+                </div>
+
+                <div class="planos">
+
+                    <div class="titulo_plano">
+                        <h2><u>PLANO MASTER</u></h2>
+                        <p>Desenvolvido para quem quer treinar no presencial e manter a evolução no digital.</p>
+                        <h2>R$79<span class="preço">/mês</span></h2>
+                    </div>
+
+                    <div class="itens_plano">
+                        <span class="material-symbols-outlined">
+                            check
+                        </span>
+                        <p>Acesso total à Plataforma Digital OVERPOWER (fichas personalizadas e métricas de evolução).
+                        </p>
+                    </div>
+
+                    <div class="itens_plano">
+                        <span class="material-symbols-outlined">
+                            check
+                        </span>
+                        <p>Avaliação física e ajuste periódico de carga com os professores.</p>
+                    </div>
+
+                    <div class="itens_plano">
+                        <span class="material-symbols-outlined">
+                            check
+                        </span>
+                        <p>10% de desconto permanente na loja online oficial (vestuário e acessórios).</p>
+                    </div>
+
+                    <div class="itens_plano">
+                        <span class="material-symbols-outlined">
+                            check
+                        </span>
+                        <p>Além de tudo que possui no PLANO IRON.</p>
+                    </div>
+
+                </div>
+
+                <div class="planos">
+
+                    <div class="titulo_plano">
+                        <h2><u>PLANO ELITE</u></h2>
+                        <p>Para quem quer alta performance, consultoria técnica e vantagens exclusivas na marca.</p>
+                        <h2>R$99<span class="preço">/mês</span></h2>
+                    </div>
+
+                    <div class="itens_plano">
+                        <span class="material-symbols-outlined">
+                            check
+                        </span>
+                        <p>Consultoria técnica quinzenal para progressão de carga e correção de execução.</p>
+                    </div>
+
+                    <div class="itens_plano">
+                        <span class="material-symbols-outlined">
+                            check
+                        </span>
+                        <p>15% de desconto permanente na loja online oficial.</p>
+                    </div>
+
+                    <div class="itens_plano">
+                        <span class="material-symbols-outlined">
+                            check
+                        </span>
+                        <p>3 passes livres por mês para trazer acompanhantes.</p>
+                    </div>
+
+                    <div class="itens_plano">
+                        <span class="material-symbols-outlined">
+                            check
+                        </span>
+                        <p>Além de tudo que possui no PLANO MASTER.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="receitas">
+                <img class="receitas_imagem" src="imagem/ALMONDEGA PROTEICA.png" alt="Almondegas Proteicas"
+                    width="450px">
+
+                <div class="receitas_texto">
+
+                    <h2 class="receitas_titulo"><u>ALMÔNDEGAS PROTEICAS</u></h2>
+                    <h4 class="receitas_subtitulo">Nutrição pesada para quem busca hipertrofia sem enrolação.</h4>
+                    <p>Desenvolvida para entregar o aporte de aminoácidos necessário no pós-treino, a nossa Almôndega
+                        Proteica combina carne magra de alta qualidade, temperos naturais e um preparo prático para
+                        encaixar
+                        na sua rotina. Uma refeição com excelente densidade nutricional, baixo teor de gordura e o sabor
+                        que
+                        a sua dieta exige para manter a constância.</p>
+                    <h4 class="receitas_subtitulo">Quer aprender o passo a passo, a tabela de macros completa e outras
+                        receitas para o seu objetivo?</h4>
+
+                    <a href="receitas.html"><button class="receitas_botao">CONHEÇA TODAS AS RECEITAS</button></a>
+
+                </div>
+            </div>
+
+            <div id="ultima_receita" class="receitas">
+                <div class="receitas_texto">
+
+                    <h2 class="receitas_titulo"><u>PANQUECA DE BANANA PROTEICA</u></h2>
+
+                    <h4 class="receitas_subtitulo">Combustível de alta performance para quem não aceita treino fraco.
+                    </h4>
+
+                    <p>Pensada para quem precisa de energia de rápida absorção e aporte proteico constante, a nossa
+                        receita
+                        une a energia limpa da banana ao topo de calda proteica e mirtilos frescos carregados de
+                        antioxidantes. A combinação exata para garantir glicogênio muscular, aceleração na recuperação e
+                        zero peso na consciência antes de encarar o ferro pesado.</p>
+
+                    <h4 class="receitas_subtitulo">Quer conferir a lista de ingredientes, o modo de preparo rápido e a
+                        tabela nutricional detalhada?</h4>
+
+                    <a href="receitas.html"><button class="receitas_botao">CONHEÇA TODAS AS RECEITAS</button></a>
+
+                </div>
+                <img id="receitas_imagem" src="imagem/PANQUECA DE ABNAA.png" width="500px">
+            </div>
+
+        </section>
+
+        <hr id="separaçao">
+
+        <section class="organizaçao">
+
+            <img class="foto_do_produto" src="imagem/HOMEM TOMANDO PRE TREINO.png" alt="Produto da marca" width="500px">
+
+            <div class="texto_produto">
+
+                <h4 class="fase_chamativa">A falta de foco e a fadiga precoce são os maiores inimigos da sua evolução.
+                </h4>
+
+                <p>O Pré-Treino OVERPOWER Morango foi forjado para aniquilar esses obstáculos.
+
+                    Nossa fórmula entrega uma descarga imediata de energia limpa e foco inabalável. Sinta a diferença na
+                    primeira dose: mais força, pumps insanos e resistência para esmagar cada série.
+                    Não deixe o cansaço roubar seus ganhos.
+                </p>
+
+                <h4 class="fase_chamativa">GARANTA O SEU E DOMINE A ACADEMIA:</h4>
+
+                <a href="produtos.html"><button class="botao_comprar">ACESSE A PAGINA DE PRODUTOS</button></a>
+            </div>
+        </section>
+
+
+
+        <section class="box_recomendaçao">
+            <img src="imagem/conselho de profissionais.png" width="150px">
+            <section class="recomendaçao">
+
+                <div class="estrelas">
+
+                    <span class="material-symbols-outlined" style="color: #EDBC00;
+                            font-variation-settings:
+                            'FILL' 10,
+                            'wght' 300,
+                            'GRAD' 0,
+                            'opsz' 24">
+                        star
+                    </span>
+
+                    <span class="material-symbols-outlined" style="color: #EDBC00;
+                            font-variation-settings:
+                            'FILL' 10,
+                            'wght' 300,
+                            'GRAD' 0,
+                            'opsz' 24">
+                        star
+                    </span>
+
+                    <span class="material-symbols-outlined" style="color: #EDBC00;
+                            font-variation-settings:
+                            'FILL' 10,
+                            'wght' 300,
+                            'GRAD' 0,
+                            'opsz' 24">
+                        star
+                    </span>
+
+                    <span class="material-symbols-outlined" style="color: #EDBC00;
+                            font-variation-settings:
+                            'FILL' 10,
+                            'wght' 300,
+                            'GRAD' 0,
+                            'opsz' 24">
+                        star
+                    </span>
+
+                    <span class="material-symbols-outlined" style="color: #EDBC00;
+                            font-variation-settings:
+                            'FILL' 10,
+                            'wght' 300,
+                            'GRAD' 0,
+                            'opsz' 24">
+                        star
+                    </span>
+
+                </div>
+
+                <div class="profissional">
+                    <img src="imagem/FOTO DA PRIMEIRA PROFISSIONAL.png" width="40">
+
+                    <h6><i>ISLA MARTIN DI SARTORI -</i><span class="especializaçao"> PROFISSIONAL ESPECIALIZADA EM
+                            TREINAMENTO DE ALTA PERFOMANCE</span></h6>
+                </div>
+
+                <div class="texto">
+                    <p>"Treino de alta performance não é sobre se movimentar até cansar, é sobre gerar o estímulo certo
+                        na fibra certa. A diferença entre quem estagna e quem evolui está na consciência corporal:
+                        espremer o músculo no ponto de contração máxima e manter a postura impecável até a última
+                        repetição da série. Técnica cirúrgica sempre vem antes do peso."</p>
+                </div>
+
+            </section>
+
+            <section class="recomendaçao">
+
+                <div class="estrelas">
+
+                    <span class="material-symbols-outlined" style="color: #EDBC00;
+                            font-variation-settings:
+                            'FILL' 10,
+                            'wght' 300,
+                            'GRAD' 0,
+                            'opsz' 24">
+                        star
+                    </span>
+
+                    <span class="material-symbols-outlined" style="color: #EDBC00;
+                            font-variation-settings:
+                            'FILL' 10,
+                            'wght' 300,
+                            'GRAD' 0,
+                            'opsz' 24">
+                        star
+                    </span>
+
+                    <span class="material-symbols-outlined" style="color: #EDBC00;
+                            font-variation-settings:
+                            'FILL' 10,
+                            'wght' 300,
+                            'GRAD' 0,
+                            'opsz' 24">
+                        star
+                    </span>
+
+                    <span class="material-symbols-outlined" style="color: #EDBC00;
+                            font-variation-settings:
+                            'FILL' 10,
+                            'wght' 300,
+                            'GRAD' 0,
+                            'opsz' 24">
+                        star
+                    </span>
+
+                    <span class="material-symbols-outlined" style="color: #EDBC00;
+                            font-variation-settings:
+                            'FILL' 10,
+                            'wght' 300,
+                            'GRAD' 0,
+                            'opsz' 24">
+                        star
+                    </span>
+
+                </div>
+
+                <div class="profissional">
+                    <img src="imagem/fernando imagem.png" width="40">
+
+                    <h6><i>FERNANDO MATOS FERREIRA -</i><span class="especializaçao"> PROFISSIONAL E ATLETA DE ALTO
+                            REDIMENTO</span></h6>
+                </div>
+
+                <div class="texto">
+                    <p>"A otimização do rendimento atlético requer disciplina técnica e consciência corporal. Transferir
+                        a tensão para estruturas articulares por falta de estabilização do core compromete a eficácia do
+                        treino. A execução de amplitude completa, associada a uma técnica refinada, é a base sólida para
+                        a construção de massa muscular de forma sustentável e de alto nível."</p>
+                </div>
+            </section>
+
+
+            <section class="recomendaçao">
+
+                <div class="estrelas">
+
+                    <span class="material-symbols-outlined" style="color:#EDBC00;
+                            font-variation-settings:
+                            'FILL' 30,
+                            'wght' 300,
+                            'GRAD' 0,
+                            'opsz' 24">
+                        star
+                    </span>
+
+                    <span class="material-symbols-outlined" style="color: #EDBC00;
+                            font-variation-settings:
+                            'FILL' 10,
+                            'wght' 300,
+                            'GRAD' 0,
+                            'opsz' 24">
+                        star
+                    </span>
+
+                    <span class="material-symbols-outlined" style="color: #EDBC00;
+                            font-variation-settings:
+                            'FILL' 10,
+                            'wght' 300,
+                            'GRAD' 0,
+                            'opsz' 24">
+                        star
+                    </span>
+
+                    <span class="material-symbols-outlined" style="color: #EDBC00;
+                            font-variation-settings:
+                            'FILL' 10,
+                            'wght' 300,
+                            'GRAD' 0,
+                            'opsz' 24">
+                        star
+                    </span>
+
+                    <span class="material-symbols-outlined" style="color: #EDBC00;
+                            font-variation-settings:
+                            'FILL' 10,
+                            'wght' 300,
+                            'GRAD' 0,
+                            'opsz' 24">
+                        star
+                    </span>
+
+                </div>
+
+                <div class="profissional">
+                    <img src="imagem/kira imagem.png" width="40">
+
+                    <h6><i>KIRA PETROVA -</i><span class="especializaçao"> PROFISSIONAL DE TREINAMENTO E
+                            FISIOTERAPEUTA</span></h6>
+                </div>
+
+                <div class="texto">
+                    <p>"Forçar a amplitude de movimento sem a devida mobilidade articular não gera mais hipertrofia,
+                        gera microtraumas e desalinhamento estrutural. Na fisioterapia desportiva, ensinamos que a
+                        estabilização escapular e o controlo do centro de gravidade são a base para a transferência
+                        eficiente de força. Ajuste o movimento à sua anatomia, respeite os limites fisiológicos e
+                        priorize a qualidade técnica em cada repetição."</p>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <hr id="barra_maior">
+
+    <footer>
+
+        <div class="parte_superior">
+
+            <section id="frase_e_icone">
+                <img src="imagem/icone fundo removido.png" width="55px">
+                <p class="frase_footer"><i> OVERPOWER. DOMINE SUA MELHOR VERSÃO. </i></p>
+            </section>
+
+            <div id="icones">
+                <img class="icones_redes" src="imagem/Platform=X (Twitter), Color=Negative.png" width="20px">
+                <img class="icones_redes" src="imagem/Platform=TikTok, Color=Negative.png" width="20px">
+                <img class="icones_redes" src="imagem/Platform=Facebook, Color=Negative.png" width="20px">
+                <img class="icones_redes" src="imagem/Platform=Instagram, Color=Negative.png" width="20px">
+                <img class="icones_redes" src="imagem/Platform=YouTube, Color=Negative.png" width="22px">
+                <img class="icones_redes" src="imagem/Platform=WhatsApp, Color=Negative.png" width="20px">
+            </div>
+
+        </div>
+
+        <hr id="barra_menor">
+
+        <div class="caixa_do_rodape">
+
+            <div class="caixas">
+
+                <h5><i>DÚVIDAS?</i></h5>
+
+                <a href="sobrenos.html"><p><i>Quem somos nós?</i></p></a>
+
+                <p><i>Política de privacidade</i></p>
+
+                <p><i>Frete grátis</i></p>
+
+                <p><i>Pagamentos e envio</i></p>
+
+                <p><i>Como rastrear meu pedido</i></p>
+
+            </div>
+
+
+            <div class="caixas">
+
+                <h5><i>ENTRE EM CONTATO</i></h5>
+
+                <div id="contato">
+                    <span class="material-symbols-outlined" style=" color: #f4f4f4;
+                                font-variation-settings:
+                                'FILL' 5,
+                                'wght' 200,
+                                'GRAD' 10,
+                                'opsz' 24">
+                        call
+                    </span>
+
+                    <p><i>+55 (17) 9999-999</i></p>
+                </div>
+
+                <p id="contato_especifico"><i>A OVERPOWER está de portas abertas para o seu treino de segunda a
+                        sexta-feira, das 04h30 às 23h, e aos sábados e domingos, das 06h às 16h.</i></p>
+
+            </div>
+
+            <div class="caixas">
+
+                <a href="sobrenos.html"><h5><i>SOBRE A OVERPOWER</i></h5></a>
+
+                <p id="sobre_frase_rodape"><i>Projetada para quem busca transformação e alto rendimento, a OVERPOWER une
+                        estrutura de ponta, profissionais especializados e preços acessíveis. Oferecemos musculação,
+                        cardio e treinos personalizados — presencialmente e no digital —, além de uma linha completa de
+                        produtos em nosso site.
+                        Em expansão por todo o Brasil, entregamos a força e a segurança que você precisa para dominar
+                        seus limites.</i></p>
+
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

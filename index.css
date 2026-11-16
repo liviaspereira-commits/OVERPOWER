@@ -1,0 +1,879 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'lemon milk', sans-serif;
+}
+
+a{
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+header{
+    background-color: #f4f4f4;
+    color: #3e035a;
+    padding: 10px;
+    gap: 40px;
+    font-size: 9px;
+    font-weight: bold;
+    text-underline-offset: 3px;
+    letter-spacing: 0.3px;
+}    
+
+.carrosel{
+    position: relative;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    min-height: 40px;
+    overflow: hidden;
+}
+
+.carrosel input[type="radio"]{
+    display: none;
+}
+
+.frase_item{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+
+}
+
+#frase1:checked ~ .item_1,
+#frase2:checked ~ .item_2, 
+#frase3:checked ~ .item_3,
+#frase4:checked ~ .item_4{
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+}
+
+.seta{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold; 
+    user-select: none;
+    padding: 0px 8px;
+
+}
+
+.seta:hover{
+    color: #3e035a83;
+
+}
+
+.frase{
+    font-size: 10px;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin:0px;
+}
+nav{
+    display: flex;
+    background-color: #3e035a;
+    padding: 14px;
+    color: #f4f4f4;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+#parte_esquerda_menu{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+nav h5{
+   font-size: 14px;
+   font-style:italic;
+   font-weight: 500;
+   letter-spacing: 0.8px;
+   transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out; 
+}
+
+
+nav .material-symbols-outlined{
+    font-size:11px;
+    transition: color 0.3s ease-in-out; 
+}
+
+
+.logo_menu{
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+nav section{
+    display: flex;
+    align-items:center;
+    gap: 6px;
+}
+
+nav section:hover{
+    color:#f4f4f4af;
+    cursor: pointer;
+}
+
+nav h5:hover{
+    color:#f4f4f4af;
+    cursor: pointer;
+    text-decoration: underline;
+   /* dar espaço entre a linha e o texto */
+   text-underline-offset: 3px;
+}
+
+
+#pesquisa{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-style:italic;
+    font-weight: 540;
+    letter-spacing: 0.7px;
+    gap: 8px;
+    background-color: #f4f4f4fa;
+    color: #3e035a;
+    padding: 12px;
+    padding-left: 6px;
+    padding-right: 250px;
+    border-radius: 15px;
+}
+
+#pesquisa input {
+    background: transparent; /* Remove o fundo branco padrão */
+    border: none;      
+    outline: none;           /* Remove aquela borda preta/azul que aparece ao clicar */
+    color: #3e035a;        
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    width: 100%;             /* Faz o campo de texto ocupar o resto do espaço interno */
+}
+
+/*Cor do texto de exemplo (Placeholder) */
+#pesquisa input::placeholder {
+    color: #3e035a99;        /* Deixa o "Pesquisar" um pouco mais transparente */
+}
+
+#pesquisa .material-symbols-outlined{
+    font-size: 18px;
+}
+
+#parte_direita_menu{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #f4f4f4;
+    justify-content:flex-end;
+    margin-right: 20px;
+}
+
+#icones_lateral_menu .material-symbols-outlined{
+    font-size: 20px;
+    padding:5px
+}
+
+main{
+    background-color: #0f0011;
+}
+
+#banner{
+    width: 100%;
+
+
+}
+
+video{
+    width: 100%;
+    z-index: -1;
+}
+
+.frase_banner{
+    top:-600px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#frase_principal{
+    position: relative;
+    z-index: 1;
+    font-family:'BLACK MUSTANG', sans-serif;
+    font-size: 110px;
+    font-weight: normal;
+    letter-spacing: 8px;
+    color:#f4f4f4
+}
+
+#frase_secundaria{
+    position: relative;
+    z-index: 1;
+    font-family:'lemon milk', sans-serif;
+    font-size: 25px;
+    font-style:italic;
+    letter-spacing: 1px;
+    color:#f4f4f4ba
+}
+
+#botao_banner{
+    font-family:'lemon milk', sans-serif;
+    margin-top: 120px;
+    position: relative;
+    z-index: 1;
+    background-color: #f4f4f429;
+    color: #f4f4f446;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 14px;
+    font-weight: 550;
+    font-style:italic;
+    text-underline-offset: 2px;
+    letter-spacing: 1.4px;
+    border:0px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+}
+
+#botao_banner:hover{
+    background-color: #3e035a73;
+    color: #f4f4f4a4;
+}
+
+hr{
+    border: none;
+    background-color: #f4f4f4;
+}
+
+#separaçao{
+    background-color: #f4f4f4;
+    height: 4px;
+    width: 100%;
+}
+
+
+.container{
+    height: 855px;
+}
+
+#segundo_hr{
+    width: 80%;
+    height:2px ;
+    background-color: #f4f4f4a0;
+}
+
+#terceiro_hr{
+    width: 50%;
+    height:2px ;
+    background-color: #f4f4f4a0;
+
+}
+
+.linhas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#fundo_frasesobrenos{
+    background-color: #3e035a;
+    padding: 6px;
+    border-top-left-radius:20px;
+    border-bottom-right-radius: 20px;
+}
+
+.titulo{
+    font-weight: bolder;
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-top: 2px;
+    padding: 8px 0px ;
+    font-family:'lemon milk', sans-serif;
+    color: #f4f4f4;
+}
+
+.escrita_sobrenos{
+    font-family:'lemon milk', sans-serif;
+    margin-bottom: 20px;
+    color: #f4f4f4;
+}
+
+.variaçao_escrita{
+    font-size: 13px;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    color: #f4f4f4d4;
+}
+
+.sobrenos_texto{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /*alinha o as escritas a esquerda*/
+    justify-content: center; /*mas deixa centralizado na pagina*/
+}
+
+.sobrenos_box{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    margin: 25px 35px 25px 35px;
+}
+
+
+
+
+.container-imagem {
+  position: relative;
+}
+
+.banner1{
+  display: flex;
+}
+.container-imagem img {
+
+  width: 100%;
+  height: auto;
+}
+
+.container-imagem .img-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.container-imagem:hover .img-hover {
+  opacity: 1;
+}
+
+
+
+.subtitulo{
+    margin-bottom: 25px;
+    padding: 10px;
+    margin-left: -10px; /* move a imagem do sobre nós um pouco acima do imagem das pessoas*/
+}
+
+.diferenciais .material-symbols-outlined{
+    color: #3e035a;
+    font-size: 20px;
+}
+
+.diferenciais_escritas{ 
+    font-style: italic;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #f4f4f4d6;
+    transition:0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.diferenciais{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.diferenciais_box{
+    display: flex;
+    flex-direction: row; /* Deixa as colunas uma ao lado da outra */
+    gap: 30px;               
+    margin-top: 25px;
+    width: 100%; /* Ocupa a largura disponível */
+
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;     
+    gap: 15px;                  
+    flex: 1; /* Faz as colunas terem larguras iguais e proporcionais */
+}
+
+.diferenciais_escritas:hover{
+    color: #9800de;
+}
+
+.coluna_central{
+    display: flex;
+    width: 500px;
+}
+
+.coluna_meio{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    width: 600px;
+}
+
+.sup{
+    position: relative;
+    bottom:173px ;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.coluna_esquerda:hover .sup{
+    opacity: 1;
+}
+
+.inf{
+    position: relative;
+    top: 129px;
+    right: 585px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.coluna_central:hover .inf{
+   opacity: 1; 
+}
+
+.outra_coluna{
+    margin-right: 800px;
+    width: 500px;
+}
+
+.abd{
+    position: relative;
+    bottom:243px ;
+    left: 414px;
+    width: 100px;
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+
+.outra_coluna:hover .abd{
+    opacity: 1;
+}
+
+.cardio{
+    position: relative;
+    bottom:90px ;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.coluna_direita:hover .cardio{
+    opacity: 1;
+}
+
+.grade_treinos{
+    display:flex;
+    text-align: center;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.coluna_direita{
+    margin-bottom: 100px;
+}
+
+#escolha_seu_treino{
+    font-style: italic;
+    margin-top: 120px;
+    padding: 20px;
+}
+
+.planos_box{
+    margin:-20px 40px 200px 40px;
+    border-radius: 40px;
+    padding-top: 0px;
+    padding: 90px;
+    background-color: #1c0320;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.planos_imagem{
+   margin-left: 60px;
+   margin-bottom:-70px;
+}
+
+.planos .material-symbols-outlined{
+    color: #9800de;
+    font-size: 20px;
+}
+
+.planos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+    background-color: #0f0011;
+    font-size: 12px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: start;
+    width: 350px;
+    color: #f4f4f4;
+    transition:0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.planos:hover{
+    background-color: #3e035a;
+}
+
+.itens_plano{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.titulo_plano{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 10px;
+    color: #f4f4f4;
+}
+
+.titulo_plano h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.titulo_plano p{
+    font-size: 10px;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    color: #f4f4f4a7;
+}
+
+.titulo_plano .preço{
+    margin-left: 5px;
+    color: #f4f4f498;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.receitas{
+    background-color: #3e035a;
+    color: #f4f4f4;
+}
+
+.receitas_titulo{
+    font-style: italic;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    margin-bottom: 50px;
+    color: #f4f4f4;
+}
+
+.receitas_subtitulo{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    color: #f4f4f4;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.receitas_texto p{
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    color: #f4f4f4;
+    font-weight: lighter;
+}
+
+.receitas_texto{
+    margin-left: 50px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /*alinha o as escritas a esquerda*/
+    justify-content: center; /*mas deixa centralizado na pagina*/
+    margin-bottom: 50px;
+}
+
+.receitas_botao{
+    margin-top: 50px;
+    font-family:'lemon milk', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    background-color: #29013C;
+    color: #f4f4f4;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition:0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.receitas_botao:hover{
+    color: #9800de;
+    background-color:#f4f4f4;
+}
+
+.receitas{
+    gap: 10px;
+    margin: 40px 30px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#receitas_imagem{
+    margin-left:110px;
+}
+
+#ultima_receita{
+    margin-bottom: 100px;
+}
+
+.fase_chamativa{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    color: #3e035a;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.texto_produto p{
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    color: #3e035a;
+    font-weight: lighter;
+}
+
+.botao_comprar{
+    margin-top: 50px;
+    font-family:'lemon milk', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    background-color: #EDEDED;
+    color: #3e035a;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition:0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.botao_comprar:hover{
+    background-color: #3e035a;
+    color: #EDEDED;
+}
+
+.texto_produto{
+    padding: 40px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /*alinha o as escritas a esquerda*/
+    justify-content: center; /*mas deixa centralizado na pagina*/
+    margin-bottom: 50px;
+    background-color: #f4f4f4;
+}
+
+.organizaçao{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.estrelas{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.recomendaçao{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #f4f4f4;
+    background-color: #29013C;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-left:20px;
+    padding-right: 20px;
+    transition:0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.especializaçao{
+    letter-spacing: 2.5px;
+    font-weight: 10;
+    font-style:italic;
+}
+
+.texto{
+    margin-left: 10px;
+    padding: 10px;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    display: flex;
+    justify-content: center;
+}
+
+.profissional{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.profissional h6{
+    margin-left: 10px;
+}
+
+.box_recomendaçao{
+    padding:70px;
+}
+
+.recomendaçao:hover{
+    background-color: #f4f4f4;
+    color: #3e035a;
+}
+
+
+#barra_maior{
+    height: 16px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer{
+    background-color: #3e035a;
+}
+
+.parte_superior{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+#frase_e_icone{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    padding: 4px;
+    margin-left: 20px;
+    color: #f4f4f4e3;
+    font-weight: normal;
+}
+
+.frase_footer{
+    margin-left: 6px;
+}
+
+.icones_redes{
+    margin-left: 17px;
+    margin-right: 17px;
+    align-items: center;
+    flex-direction: row;
+    transition:0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+#icones{
+    margin-right: 20px;
+}
+
+.icones_redes:hover{
+    width: 25px;
+}
+
+#barra_menor{
+    height: 2px;
+}
+
+.caixas p{
+    color: #f4f4f4;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: lighter;
+    text-decoration: underline;
+    letter-spacing: 1.5;
+    transition:0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.caixas p:hover{
+    color: #f4f4f477;
+}
+
+.caixas h5{
+    color: #f4f4f4;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    font-weight: normal;
+}
+
+#contato{
+    display: flex;
+    align-items: center;
+    color: #f4f4f4;
+    flex-direction: row;
+    transition:0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#contato p{
+    margin-left: 6px;
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    font-weight: lighter;
+}
+
+#contato_especifico{
+    text-decoration: none;
+    letter-spacing: 1.8px;
+    font-size: 10px;
+    width: 200px;
+    color: #f4f4f498;
+    transition:0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#contato_especifico:hover{
+    color: #f4f4f4;
+
+}
+
+#sobre_frase_rodape{
+    text-decoration: none;
+    width: 300px;
+    font-size: 11px;
+}
+
+.caixa_do_rodape{
+    display: flex;
+    justify-content: space-around;
+    gap: 90px;
+    margin-top: 30px;
+    padding-bottom: 45px;
+}

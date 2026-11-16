@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="imagem/icone_topo_chrome.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVERPOWER</title>
+    <link rel="stylesheet" href="carrinho.css">
+    <!--link dos icones -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon" />
+<body>
+    <header class="carrosel">
+        <input type="radio" name="frase_control" id="frase1" checked>
+        <input type="radio" name="frase_control" id="frase2">
+        <input type="radio" name="frase_control" id="frase3">
+        <input type="radio" name="frase_control" id="frase4">
+        <div class="frase_item item_1"> <!--setas laterais-->
+            <label for="frase4" class="seta">&lsaquo;</label>
+            <span class="frase">TREINE COM ATITUDE. CONHEÇA NOSSOS PRODUTOS</span>
+            <label for="frase2" class="seta">&rsaquo;</label>
+        </div>
+        <div class="frase_item item_2">
+            <label for="frase1" class="seta">&lsaquo;</label>
+            <span class="frase">DESCUBRA ONDE A EVOLUÇÃO ACONTECE. CONHEÇA A OVERPOWER</span>
+            <label for="frase3" class="seta">&rsaquo;</label>
+        </div>
+        <div class="frase_item item_3">
+            <label for="frase2" class="seta">&lsaquo;</label>
+            <span class="frase">UMA REDE FEITA PARA QUEM QUER EVOLUIR. CONHEÇA NOSSOS PARCEIROS</span>
+            <label for="frase4" class="seta">&rsaquo;</label>
+        </div>
+        <div class="frase_item item_4">
+            <label for="frase3" class="seta">&lsaquo;</label>
+            <span class="frase">DESAFIE SEUS LIMITES. ULTRAPASSE-OS. EXPLORE NOSSOS TREINOS</span>
+            <label for="frase1" class="seta">&rsaquo;</label>
+        </div>
+        <section class="carrosel_header">
+            <input type="radio" name="carrosel_control" id="carrosel1" checked>
+            <input type="radio" name="carrosel_control" id="carrosel2">
+            <input type="radio" name="carrosel_control" id="carrosel3">
+            <input type="radio" name="carrosel_control" id="carrosel4">
+        </section>
+    </header>
+    <nav>
+        <div id="parte_esquerda_menu">
+            <a href="index.html">
+                <img src="logo branca com fundo roxo.png" alt="logo" width="180px" class="logo_menu">
+            </a>
+            <!--TOPICOS MENU-->
+            <section>
+                <a href="produtos.html">
+                    <h5>PRODUTOS</h5>
+                </a>
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </section>
+            <section>
+                <a href="treinos.html">
+                    <h5>TREINOS</h5>
+                </a>
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </section>
+            <section>
+                <a href="parcerias.html">
+                    <h5>PARCERIAS</h5>
+                </a>
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </section>
+            <section>
+                <a href="receitas.html">
+                    <h5>RECEITAS</h5>
+                </a>
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </section>
+            <section>
+                <a href="sobrenos.html">
+                    <h5>SOBRE NÓS</h5>
+                </a>
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </section>
+        </div>
+        <div id="parte_direita_menu">
+            <!-- parte de pesquisa-->
+            <div id="pesquisa">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+                <input type="text" placeholder="Pesquisar">
+            </div>
+            <div id="icones_lateral_menu">
+                <span class="material-symbols-outlined">
+                    account_circle
+                </span>
+                <a href="carrinho.html">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <section class="produto" id="produto">
+
+
+            <div class="produto-imagem">
+
+
+                <img src="whet ninho.png"
+                    alt="Whey Protein sabor Ninho da OVERPOWER">
+
+
+                <span class="estrela">✳</span>
+
+
+            </div>
+
+
+            <div class="produto-info">
+
+
+                <p class="marca">OVERPOWER WHEY NINHO 900G</p>
+
+
+                <p class="descricao-curta">
+                    Máxima recuperação em cada dose.
+                </p>
+
+
+                <div class="preco">
+                    <span>R$</span> 129,90
+                </div>
+
+
+                <p class="parcelamento">
+                    ou 3x de R$ 43,30 sem juros
+                </p>
+
+
+                <div class="quantidade">
+
+
+                    <button type="button" id="diminuir">−</button>
+
+
+                    <span id="quantidade">1</span>
+
+
+                    <button type="button" id="aumentar">+</button>
+
+
+                </div>
+
+
+                <button class="comprar" type="button">
+                    COMPRAR AGORA
+                </button>
+
+
+                <div class="cep">
+
+
+                    <input type="text"
+                        placeholder="Seu CEP"
+                        maxlength="9">
+
+
+                    <button type="button">Calcular</button>
+
+
+                </div>
+
+
+                <p class="cores-titulo">OUTRAS OPÇÕES</p>
+
+
+                <div class="outras-opcoes">
+
+
+                    <img src="whey choco.png" alt="Whey sabor chocolate">
+
+
+                    <img src="whey morango.png" alt="Whey sabor morango">
+
+
+                    <img src="creatina mockup 2.png" alt="Creatina opção 1">
+
+
+                    <img src="creatina mockup 3.png" alt="Creatina opção 2">
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+        <section class="comunidade" id="treinos">
+
+
+            <div class="comunidade-conteudo">
+
+
+                <p class="sobretitulo">OVERPOWER</p>
+
+
+                <h2>JUNTE-SE À COMUNIDADE</h2>
+
+
+                <p class="comunidade-descricao">
+                    Faça parte de uma comunidade que treina com atitude,
+                    determinação e vontade de superar limites todos os dias.
+                </p>
+
+
+                <div class="comunidade-card">
+
+
+                    <p class="comunidade-legenda">
+                        ENTRE PARA NOSSA COMUNIDADE
+                    </p>
+
+
+                    <div class="campo-comunidade">
+
+
+                        <span>OVERPOWER15</span>
+
+
+                        <button type="button" id="copiar-codigo">
+                            COPIAR
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="botoes-comunidade">
+
+
+                    <a href="#treinos" class="botao-roxo">
+                        CONHEÇA A COMUNIDADE
+                    </a>
+
+
+                    <a href="#produto" class="botao-contorno">
+                        VER PRODUTOS
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="comunidade-visual">
+
+
+                <img src="watermarked_img_13437901387256323408 1.png"
+                    alt="Atleta treinando em uma academia">
+
+
+                <div class="comunidade-legenda-final">
+
+
+                    <h3>SUPERE SEUS LIMITES</h3>
+
+
+                    <p>
+                        Disciplina, força e consistência.
+                        A sua evolução começa com a atitude de hoje.
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+
+
+
+    <hr id="barra_maior">
+    <footer>
+    
+        <div class="parte_superior">
+            <section id="frase_e_icone">
+            <img src="icone fundo removido.png" width="55px">
+            <p class="frase_footer"><i> OVERPOWER. DOMINE SUA MELHOR VERSÃO. </i></p>
+            </section>
+            <div id="icones">
+                <img class="icones_redes" src="twiter x.png" width="20px">
+                <img class="icones_redes" src="tik tok.png" width="20px">
+                <img class="icones_redes" src="facebook.png" width="20px">
+                <img class="icones_redes" src="instagram.png" width="20px">
+                <img class="icones_redes" src="youtube.png" width="22px">
+                <img class="icones_redes" src="whatsap.png" width="20px">
+            </div>
+        </div>
+        
+        <hr id="barra_menor">
+        <div class="caixa_do_rodape">
+                <div class="caixas">
+                    <h5><i>DÚVIDAS?</i></h5>
+                    <p><i>Quem somos nós?</i></p>
+                    <p><i>Política de privacidade</i></p>
+                    <p><i>Frete grátis</i></p>
+                    <p><i>Pagamentos e envio</i></p>
+                    <p><i>Como rastrear meu pedido</i></p>
+                </div>
+                <div class="caixas">
+                    <h5><i>ENTRE EM CONTATO</i></h5>
+                    <div id="contato">
+                        <span class="material-symbols-outlined" style=" color: #f4f4f4;
+                                font-variation-settings:
+                                'FILL' 5,
+                                'wght' 200,
+                                'GRAD' 10,
+                                'opsz' 24">
+                            call
+                        </span>
+                        <p><i>+55 (17) 9999-999</i></p>
+                    </div>
+                    <p id="contato_especifico"><i>A OVERPOWER está de portas abertas para o seu treino de segunda a sexta-feira, das 04h30 às 23h, e aos sábados e domingos, das 06h às 16h.</i></p>
+                
+                </div>
+                <div class="caixas">
+                    
+                    <h5><i>SOBRE A OVERPOWER</i></h5>
+                    <p id="sobre_frase_rodape"><i>Projetada para quem busca transformação e alto rendimento, a OVERPOWER une estrutura de ponta, profissionais especializados e preços acessíveis. Oferecemos musculação, cardio e treinos personalizados — presencialmente e no digital —, além de uma linha completa de produtos em nosso site.
+                    Em expansão por todo o Brasil, entregamos a força e a segurança que você precisa para dominar seus limites.</i></p>
+                </div>
+        </div>
+    </footer>

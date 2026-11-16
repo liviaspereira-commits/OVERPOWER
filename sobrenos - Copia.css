@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'lemon milk', sans-serif;
+}
+
+a{
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+body{
+    background-color: #0f0011;
+}
+
+header{
+    background-color: #f4f4f4;
+    color: #3e035a;
+    padding: 10px;
+    gap: 40px;
+    font-size: 9px;
+    font-weight: bold;
+    text-underline-offset: 3px;
+    letter-spacing: 0.3px;
+}    
+
+.carrosel{
+    position: relative;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    min-height: 40px;
+    overflow: hidden;
+}
+
+.carrosel input[type="radio"]{
+    display: none;
+}
+
+.frase_item{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+
+}
+
+#frase1:checked ~ .item_1,
+#frase2:checked ~ .item_2, 
+#frase3:checked ~ .item_3,
+#frase4:checked ~ .item_4{
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+}
+
+.seta{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold; 
+    user-select: none;
+    padding: 0px 8px;
+
+}
+
+.seta:hover{
+    color: #3e035a83;
+
+}
+
+.frase{
+    font-size: 10px;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin:0px;
+}
+nav{
+    display: flex;
+    background-color: #3e035a;
+    padding: 14px;
+    color: #f4f4f4;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+#parte_esquerda_menu{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+nav h5{
+   font-size: 14px;
+   font-style:italic;
+   font-weight: 500;
+   letter-spacing: 0.8px;
+   transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out; 
+}
+
+
+nav .material-symbols-outlined{
+    font-size:11px;
+    transition: color 0.3s ease-in-out; 
+}
+
+
+.logo_menu{
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+nav section{
+    display: flex;
+    align-items:center;
+    gap: 6px;
+}
+
+nav section:hover{
+    color:#f4f4f4af;
+    cursor: pointer;
+}
+
+nav h5:hover{
+    color:#f4f4f4af;
+    cursor: pointer;
+    text-decoration: underline;
+   /* dar espaço entre a linha e o texto */
+   text-underline-offset: 3px;
+}
+
+
+#pesquisa{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-style:italic;
+    font-weight: 540;
+    letter-spacing: 0.7px;
+    gap: 8px;
+    background-color: #f4f4f4fa;
+    color: #3e035a;
+    padding: 12px;
+    padding-left: 6px;
+    padding-right: 250px;
+    border-radius: 15px;
+}
+
+#pesquisa input {
+    background: transparent; /* Remove o fundo branco padrão */
+    border: none;      
+    outline: none;           /* Remove aquela borda preta/azul que aparece ao clicar */
+    color: #3e035a;        
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    width: 100%;             /* Faz o campo de texto ocupar o resto do espaço interno */
+}
+
+/*Cor do texto de exemplo (Placeholder) */
+#pesquisa input::placeholder {
+    color: #3e035a99;        /* Deixa o "Pesquisar" um pouco mais transparente */
+}
+
+#pesquisa .material-symbols-outlined{
+    font-size: 18px;
+}
+
+#parte_direita_menu{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #f4f4f4;
+    justify-content:flex-end;
+    margin-right: 20px;
+}
+
+#icones_lateral_menu .material-symbols-outlined{
+    font-size: 20px;
+    padding:5px
+}
+
+
+.variacao{
+position: relative;
+bottom: 182px;
+opacity: 0%;
+ transition: opacity 0.4s ease-in-out, color 0.4s ease-in-out; 
+}
+
+.variacao:hover{
+    opacity: 100%;
+}
+
+.banner{
+  text-align: center;
+  position: relative;
+  bottom: 150px;
+
+}
+
+.evoluçao{
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: -350px;
+}
+
+.evoluçao h1{
+    margin-bottom: 30px;
+    font-size: 68px;
+    letter-spacing: 2.5px;
+}
+.evoluçao p{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    width: 700px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.texto_evoluçao{
+    max-width: 1000px;
+}
+
+.pilares{
+    height: 80vh;
+    width: 20%;
+    background-size: cover;
+    align-items: center;   
+    justify-content: center;
+    flex-direction: column;
+    transition:0.8s ease-in-out, color 0.8s ease-in-out;
+}
+
+.pilares:hover{
+    width: 25%;
+    box-shadow: 6px 6px 10px -7px #0f0011 ;
+}
+
+.pilares h5{
+    padding: 10px;
+    padding-top: 170px;
+    text-align: left;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.pilares p{
+    padding: 10px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+#pilar1{
+    background-image: url(imagem/biomecanica.png);
+    color: #f4f4f4;
+    border-radius: 90px;
+}
+
+#pilar2{
+    background-image: url(imagem/disciplina.png);
+    color: #f4f4f4;
+    border-radius: 90px;
+}
+
+#pilar3{
+    background-image: url(imagem/estrutura.png);
+    color: #f4f4f4;
+    border-radius: 90px;
+}
+
+#pilar4{
+    background-image: url(imagem/ecossistema.png);
+    color: #f4f4f4;
+    border-radius: 90px;
+}
+
+.boxes_pilares{
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+
+.pilares_overpower{
+    margin-top: 80px;
+    padding: 40px;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #3e035a;
+}
+
+.pilares_overpower h1{
+    font-size: 50px;
+    letter-spacing: 3px;
+    padding-bottom: 30px;
+}
+
+.titulo_final{
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo_final h3{
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+}
+
+.titulo_final h5{
+    font-weight: lighter;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+.lados{
+    color: #f4f4f4;
+}
+
+.lados h5{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 280px;
+    margin-left: 85px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+
+.pontos{
+    cursor: context-menu;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    transition:0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.pontos:hover{
+    color: #f4f4f4af;
+}
+
+#divisao{
+    border-color: #f4f4f452;
+    width: 2px;
+    height: 400px;
+}
+
+.diferenciais_overpower{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+
+
+
+#barra_maior{
+    height: 16px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer{
+    background-color: #3e035a;
+}
+
+.parte_superior{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+#frase_e_icone{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    padding: 4px;
+    margin-left: 20px;
+    color: #f4f4f4e3;
+    font-weight: normal;
+}
+
+.frase_footer{
+    margin-left: 6px;
+}
+
+.icones_redes{
+    margin-left: 17px;
+    margin-right: 17px;
+    align-items: center;
+    flex-direction: row;
+    transition:0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+#icones{
+    margin-right: 20px;
+}
+
+.icones_redes:hover{
+    width: 25px;
+}
+
+#barra_menor{
+    height: 2px;
+}
+
+.caixas p{
+    color: #f4f4f4;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: lighter;
+    text-decoration: underline;
+    letter-spacing: 1.5;
+    transition:0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.caixas p:hover{
+    color: #f4f4f477;
+}
+
+.caixas h5{
+    color: #f4f4f4;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    font-weight: normal;
+}
+
+#contato{
+    display: flex;
+    align-items: center;
+    color: #f4f4f4;
+    flex-direction: row;
+    transition:0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#contato p{
+    margin-left: 6px;
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    font-weight: lighter;
+}
+
+#contato_especifico{
+    text-decoration: none;
+    letter-spacing: 1.8px;
+    font-size: 10px;
+    width: 200px;
+    color: #f4f4f498;
+    transition:0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#contato_especifico:hover{
+    color: #f4f4f4;
+
+}
+
+#sobre_frase_rodape{
+    text-decoration: none;
+    width: 300px;
+    font-size: 11px;
+}
+
+.caixa_do_rodape{
+    display: flex;
+    justify-content: space-around;
+    gap: 90px;
+    margin-top: 30px;
+    padding-bottom: 45px;
+}

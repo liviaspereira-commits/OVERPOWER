@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'lemon milk', sans-serif;
+}
+
+a{
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+header{
+    background-color: #f4f4f4;
+    color: #3e035a;
+    padding: 10px;
+    gap: 40px;
+    font-size: 9px;
+    font-weight: bold;
+    text-underline-offset: 3px;
+    letter-spacing: 0.3px;
+    width: 100%;
+}    
+.carrosel{
+    position: relative;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    min-height: 40px;
+    overflow: hidden;
+}
+.carrosel input[type="radio"]{
+    display: none;
+}
+.frase_item{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+#frase1:checked ~ .item_1,
+#frase2:checked ~ .item_2, 
+#frase3:checked ~ .item_3,
+#frase4:checked ~ .item_4{
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+}
+.seta{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold; 
+    user-select: none;
+    padding: 0px 8px;
+}
+.seta:hover{
+    color: #3e035a83;
+}
+.frase{
+    font-size: 10px;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin:0px;
+}
+nav{
+     width: 100%;
+    display: flex;
+    background-color: #3e035a;
+    padding: 14px;
+    color: #f4f4f4;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+#parte_esquerda_menu{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+nav h5{
+   font-size: 14px;
+   font-style:italic;
+   font-weight: 500;
+   letter-spacing: 0.8px;
+   transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out; 
+}
+nav .material-symbols-outlined{
+    font-size:11px;
+    transition: color 0.3s ease-in-out; 
+}
+.logo_menu{
+    margin-right: 15px;
+    margin-left: 20px;
+}
+nav section{
+    display: flex;
+    align-items:center;
+    gap: 6px;
+}
+nav section:hover{
+    color:#f4f4f4af;
+    cursor: pointer;
+}
+nav h5:hover{
+    color:#f4f4f4af;
+    cursor: pointer;
+    text-decoration: underline;
+   /* dar espaço entre a linha e o texto */
+   text-underline-offset: 3px;
+}
+#pesquisa{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-style:italic;
+    font-weight: 540;
+    letter-spacing: 0.7px;
+    gap: 8px;
+    background-color: #f4f4f4fa;
+    color: #3e035a;
+    padding: 12px;
+    padding-left: 6px;
+    padding-right: 250px;
+    border-radius: 15px;
+}
+#pesquisa input {
+    background: transparent; /* Remove o fundo branco padrão */
+    border: none;      
+    outline: none;           /* Remove aquela borda preta/azul que aparece ao clicar */
+    color: #3e035a;        
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    width: 100%;             /* Faz o campo de texto ocupar o resto do espaço interno */
+}
+/*Cor do texto de exemplo (Placeholder) */
+#pesquisa input::placeholder {
+    color: #3e035a99;        /* Deixa o "Pesquisar" um pouco mais transparente */
+}
+#pesquisa .material-symbols-outlined{
+    font-size: 18px;
+}
+#parte_direita_menu{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #f4f4f4;
+    justify-content:flex-end;
+    margin-right: 20px;
+}
+#icones_lateral_menu .material-symbols-outlined{
+    font-size: 20px;
+    padding:5px
+}
+
+body{
+    background-color:#0F1100;
+
+}
+
+h1{
+    color: #f4f4f4;
+    padding: 50px;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+    margin-right: 0px;
+    margin-left: -500px;
+}
+.titulo3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin-right: 0px;
+    
+    margin-left: -500px;
+}
+.wheytexto{
+    color: #f4f4f4;
+    margin-left:700px ;
+    padding: 50px;
+}
+
+.suspensa{
+    width: 18%;
+    background-color:#3e035a;
+    color: #0F1100;
+    margin-bottom: -200px;
+    margin-left: 90px;
+    bottom: 300px;
+    height:340px;
+    left: 100px;
+    padding: 20px;
+    padding-bottom: 30px;
+    right: 90px;
+}
+
+ul{
+    color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.suspensadois{
+    width: 268px;
+    background-color:#3e035a;
+    color: #f4f4f4;
+    margin-top: -10px;
+    bottom: 300px;
+    height:100px;
+    left: 100px;
+    padding: 20px;
+    padding-bottom: 30px;
+    
+}
+
+.produtosimg{
+    height: 278px;
+    width: 268px;
+}
+
+.adicionar{
+    
+   opacity: 0%;
+   transition: 0,3s;
+}
+
+.suple:hover{
+    text-decoration: underline;
+}
+.crea:hover{
+    text-decoration: underline;
+}
+.whe:hover{
+    text-decoration: underline;
+}
+.ace:hover{
+    text-decoration: underline;
+}
+.cami:hover{
+    text-decoration: underline;
+}
+.tudotudo{
+    display: flex;
+    margin-left: 30%;
+    gap: 60px;
+    margin-top: -20%;
+    margin-bottom: 78px;
+}
+
+.tudotudodois{
+    display: flex;
+    margin-left: 30%;
+    gap: 60px;
+    flex-wrap: wrap;
+    
+}
+.tudotudodoiss{
+    display: flex;
+    margin-left: 30%;
+    gap: 60px;
+    flex-wrap: wrap;
+    
+}
+
+
+button{
+    color: #f4f4f4;
+    background-color: #3e035a;
+    padding: 20px;
+    margin-top: 60px;
+    margin-left: -90px;
+    width: 260px;
+    border-radius: 50px;
+    text-align: center;
+   border-style: none;
+}
+
+.carrinho:hover{
+    text-decoration: underline;
+}
+
+.suspensatres{
+    width: 268px;
+    background-color:#f4f4f4;
+    margin-top: -10px;
+    bottom: 300px;
+    height:60px;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+.suspensatres::after .adicionar{
+    opacity: 1;
+}
+.compra{
+    color:#3e035a;
+    margin-left: 80px;
+}
+
+svg{
+    fill: #3e035a;
+    margin-left: 40px;
+    margin-top: -80px;
+    margin-bottom: 15px;
+}
+.carrinhoprodu{
+    margin-top: -18.5px;
+    padding-bottom: 50%;
+}
+
+#barra_maior{
+    margin-top: 90px;
+    height: 16px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+footer{
+    background-color: #3e035a;
+    
+}
+.parte_superior{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+#frase_e_icone{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    padding: 4px;
+    margin-left: 20px;
+    color: #f4f4f4e3;
+    font-weight: normal;
+}
+.frase_footer{
+    margin-left: 6px;
+}
+.icones_redes{
+    margin-left: 17px;
+    margin-right: 17px;
+    align-items: center;
+    flex-direction: row;
+    transition:0.5s ease-in-out, color 0.5s ease-in-out;
+}
+#icones{
+    margin-right: 20px;
+}
+.icones_redes:hover{
+    width: 25px;
+}
+#barra_menor{
+    height: 2px;
+}
+.caixas p{
+    color: #f4f4f4;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: lighter;
+    text-decoration: underline;
+    letter-spacing: 1.5;
+    transition:0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.caixas p:hover{
+    color: #f4f4f477;
+}
+.caixas h5{
+    color: #f4f4f4;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    font-weight: normal;
+}
+#contato{
+    display: flex;
+    align-items: center;
+    color: #f4f4f4;
+    flex-direction: row;
+    transition:0.3s ease-in-out, color 0.3s ease-in-out;
+}
+#contato p{
+    margin-left: 6px;
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    font-weight: lighter;
+}
+#contato_especifico{
+    text-decoration: none;
+    letter-spacing: 1.8px;
+    font-size: 10px;
+    width: 200px;
+    color: #f4f4f498;
+    transition:0.3s ease-in-out, color 0.3s ease-in-out;
+}
+#contato_especifico:hover{
+    color: #f4f4f4;
+}
+#sobre_frase_rodape{
+    text-decoration: none;
+    width: 300px;
+    font-size: 11px;
+}
+.caixa_do_rodape{
+    display: flex;
+    justify-content: space-around;
+    gap: 90px;
+    margin-top: 30px;
+    padding-bottom: 45px;
+}
