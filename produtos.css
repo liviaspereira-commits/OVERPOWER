@@ -119,12 +119,12 @@ nav h5:hover{
     font-style:italic;
     font-weight: 540;
     letter-spacing: 0.7px;
-    gap: 18px;
+    gap: 20px;
     background-color: #f4f4f4fa;
     color: #3e035a;
     padding: 12px;
     padding-left: 6px;
-    padding-right: 258px;
+    padding-right: 264px;
     border-radius: 15px;
 }
 #pesquisa input {
@@ -151,7 +151,7 @@ nav h5:hover{
     align-items: center;
     color: #f4f4f4;
     justify-content:flex-end;
-    margin-right: 20px;
+    margin-right: 24px;
 }
 #icones_lateral_menu .material-symbols-outlined{
     font-size: 20px;
