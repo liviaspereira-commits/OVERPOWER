@@ -209,6 +209,7 @@ video{
 }
 
 #frase_principal{
+    top: 600px
     position: relative;
     z-index: 1;
     font-family:'BLACK MUSTANG', sans-serif;
