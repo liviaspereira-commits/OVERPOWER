@@ -194,7 +194,7 @@ main{
 
 video{
     width: 100%;
-    z-index: 2;
+    z-index: -1;
 }
 
 .frase_banner{
