@@ -187,13 +187,26 @@ main{
     background-color: #0f0011;
 }
 
-#banner video{
-    display:block;
+#banner video {
+    display: block;
     width: 100%;
-height:auto;
+    height: 100%;
+    object-fit: cover;
 
 }
-
+.container > .frase_banner {
+    position: relative;
+    inset: auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 48px 20px;
+#banner {
+    position: relative;
+}
 video{
     width: 100%;
     z-index: -1;
@@ -220,7 +233,11 @@ video{
     font-size: 110px;
     font-weight: normal;
     letter-spacing: 8px;
-    color:#f4f4f4
+    color:#f4f4f4;
+  
+    top: auto;
+    font-size: clamp(36px, 7vw, 110px);
+}
 }
 
 #frase_secundaria{
@@ -250,6 +267,9 @@ video{
     letter-spacing: 1.4px;
     border:0px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+ 
+    margin-top: clamp(24px, 5vw, 80px);
+
 }
 
 #botao_banner:hover{
@@ -269,10 +289,15 @@ hr{
 }
 
 
-.container{
-  position: relative;
+.container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    height: auto;
 }
-
+.container > #banner,
+.container > .frase_banner {
+    grid-area: 1 / 1;
+}
 #segundo_hr{
     width: 80%;
     height:2px ;
