@@ -119,12 +119,12 @@ nav h5:hover{
     font-style:italic;
     font-weight: 540;
     letter-spacing: 0.7px;
-    gap: 8px;
+    gap: 18px;
     background-color: #f4f4f4fa;
     color: #3e035a;
     padding: 12px;
     padding-left: 6px;
-    padding-right: 255px;
+    padding-right: 258px;
     border-radius: 15px;
 }
 #pesquisa input {
@@ -147,7 +147,7 @@ nav h5:hover{
 }
 #parte_direita_menu{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     color: #f4f4f4;
     justify-content:flex-end;
